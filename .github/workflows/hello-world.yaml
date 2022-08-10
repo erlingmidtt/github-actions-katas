@@ -2,10 +2,10 @@ name: JAVA CI
 on: push
 jobs:
   clone-down:
-    name: clone-down
     runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
+    - name : clone-down
     - uses: actions/checkout@v2
     - name: upload
       uses: actions/upload-artifact@v2
